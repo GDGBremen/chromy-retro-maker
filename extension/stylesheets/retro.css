@@ -84,10 +84,16 @@ object {
 	width: 64px;
 	background: url('chrome-extension://__MSG_@@extension_id__/images/ohmy.jpg') !important;
 	z-index: 9123456789;
+	-webkit-filter: none !important;
 }
 
 #donkeyCanvas {
 	top: 0;
 	position: fixed;
 	z-index: 9123456788;
+}
+
+#pacDroid {
+	background: none !important;
+	background-color: none !important;
 }
