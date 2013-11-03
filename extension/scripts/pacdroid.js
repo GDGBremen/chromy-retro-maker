@@ -26,7 +26,7 @@ window.onload = function createPacDroid() {
 
 	var pacDroid=document.createElement("img");
 	pacDroid.setAttribute("id", "pacDroid");
-	pacDroid.setAttribute("src", "../images/pacdroid_right.png");
+	pacDroid.setAttribute("src", chrome.extension.getURL('images/pacdroid_right.png'));
 	pacDroid.setAttribute('width', pacDroidWidth + "px");
 	pacDroid.setAttribute('height', pacDroidHeight + "px");
 	pacDroid.style.position = 'fixed';
@@ -236,6 +236,6 @@ function fixVertical() {
 		turnDown();
 	}
 	if (posTop > height) {
-		turnTop();
+		turnUp();
 	}	
 }
