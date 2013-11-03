@@ -3,13 +3,13 @@
 	"name": "dos chromy extension",
 	"description": "it makes all the websites your visiting, looking like dos",
 	"manifest_version": 2,
-	"icons": { "128": "icon128.png" },
+	"icons": { "128": "images/icon128.png" },
 	
 	"content_scripts": [ {
-		"css": ["retro.css"],
-		"js": ["jquery.js", "main.js"],
+		"css": ["stylesheets/retro.css"],
+		"js": ["scripts/jquery.js", "scripts/main.js"],
 		"matches": [ "http://*/*", "https://*/*"],
         "all_frames": true
 	}],
-	"web_accessible_resources": ["overlay.png", "retro.vs", "retro.fs", "ohmy.jpg", "cursor.png"]
+	"web_accessible_resources": ["images/overlay.png", "shader/retro.vs", "shader/retro.fs", "images/ohmy.jpg", "images/cursor.png"]
 }

@@ -11,11 +11,11 @@
 	color: #00ff00 !important;
 	font-family: 'VT323', monospace !important;
 	border-color: #00ff00 !important;
-	cursor: url('chrome-extension://__MSG_@@extension_id__/cursor.png') !important;
+	cursor: url('chrome-extension://__MSG_@@extension_id__/images/cursor.png') !important;
 }
 
 *:hover {
-	cursor: url('chrome-extension://__MSG_@@extension_id__/cursor.png') !important;
+	cursor: url('chrome-extension://__MSG_@@extension_id__/images/cursor.png') !important;
 }
 
 ::-webkit-input-placeholder {
@@ -29,7 +29,7 @@
 html,img,input[type=image] { /*html,div,a,input */
 	-webkit-filter: custom(
 		none
-		mix(url('chrome-extension://__MSG_@@extension_id__/retro.fs') normal source-atop),
+		mix(url('chrome-extension://__MSG_@@extension_id__/shader/retro.fs') normal source-atop),
 		1 1) !important;
 }
 
@@ -43,7 +43,7 @@ object {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: url('chrome-extension://__MSG_@@extension_id__/overlay.png') repeat !important;
+	background: url('chrome-extension://__MSG_@@extension_id__/images/overlay.png') repeat !important;
 	pointer-events:none;
 	-webkit-filter: none !important;
 	-webkit-animation: myfirst 0.3s;
