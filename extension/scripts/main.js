@@ -5,7 +5,8 @@ $("body").append("<div id=\"chrome-retro-game-link\" alt=\"Game\">"); // TODO:.o
 
 $("#chrome-retro-game-link").click(function(){
 	if(gameOpened){
-		// remove it from website
+		gameStarted=false;
+		$("body").remove("#donkeyCanvas");
 	}else{
 		$("body").append("<canvas id=\"donkeyCanvas\" width=\"600\" height=\"375\"></canvas>");
 		document.onkeypress = handleKeyboardEvent;
