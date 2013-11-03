@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Press Start 2P'), local('PressStart2P-Regular'), url(http://themes.googleusercontent.com/static/fonts/pressstart2p/v1/8Lg6LX8-ntOHUQnvQ0E7o3dD2UuwsmbX3BOp4SL_VwM.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'VT323';
+  font-style: normal;
+  font-weight: 400;
+  src: local('VT323'), local('VT323-Regular'), url(http://themes.googleusercontent.com/static/fonts/vt323/v4/LfMzj2MWAZU6qzlnp1MNbg.woff) format('woff');
+}
+
+body {
+	/*-webkit-filter: custom(url('chrome-extension://__MSG_@@extension_id__/retro.vs')
+				mix(url('chrome-extension://__MSG_@@extension_id__/retro.fs') normal source-atop),  
+				40 40, 
+				transform perspective(1000),
+				amplitude 30, 
+				amount 0.5)
+		!important;*/
+	/*-webkit-filter: custom(url('chrome-extension://__MSG_@@extension_id__/retro.vs') mix(url('chrome-extension://__MSG_@@extension_id__/retro.fs') multiply source-atop), 32 25 border-box detached, transform perspective(1000), amount 0.5, randomness 3, flipAxis 1 -0.58 0, tileOutline 1);*/
+	/*-webkit-filter: custom(url('chrome-extension://__MSG_@@extension_id__/retro.vs') mix(url('chrome-extension://__MSG_@@extension_id__/retro.fs') multiply source-atop), 32 25 border-box detached, transform perspective(1000) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg), amount 0.15, randomness 3, flipAxis 1 -0.58 0, tileOutline 0) !important;*/
+	
+	
+	/*-webkit-filter: custom(none url('chrome-extension://__MSG_@@extension_id__/retro.fs'), 32 25 border-box detached, transform perspective(1000), amount 0.15, tileOutline 1);*/
+	/*-webkit-filter: custom(none url('chrome-extension://__MSG_@@extension_id__/retro.fs'), 32 25 border-box detached, transform perspective(1000), amount 400, resX 1300, resY 100) !important;*/
+}
+
+* { /* * */
+	background: black !important;
+	color: green !important;
+	font-family: 'VT323', monospace !important;
+	border-color: green !important;
+}
+
+img {
+	-webkit-filter: grayscale(1) contrast(10) !important;
+	/*border: 5px solid green !important;
+	-webkit-filter: custom(url('chrome-extension://__MSG_@@extension_id__/grayscale.fs'), amount 1);*/
+}
+
+object {
+	display: none;
+}
+
+#chrome-retro-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url('chrome-extension://__MSG_@@extension_id__/overlay.png') repeat !important;
+	pointer-events:none;
+}
+
+.chrome-retro-img-container {
+	position: relative;
+}
+
+.chrome-retro-img-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 255, 0, 0.5) !important;
+}

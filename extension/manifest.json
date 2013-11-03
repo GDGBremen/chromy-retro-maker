@@ -1,5 +1,13 @@
 {
 	"version": "0.1",
 	"name": "dos chromy extension",
-	"description": "it makes all the websites your visiting, looking like dos"
+	"description": "it makes all the websites your visiting, looking like dos",
+	"manifest_version": 2,
+	"content_scripts": [ {
+		"css": ["retro.css"],
+		"js": ["jquery.js", "main.js"],
+		"matches": [ "http://*/*", "https://*/*"],
+        "all_frames": true
+	}],
+	"web_accessible_resources": ["overlay.png", "grayscale.fs", "simple.vs", "simple.fs", "retro.vs", "retro.fs", "ohmy.jpg"]
 }
