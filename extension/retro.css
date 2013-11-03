@@ -28,17 +28,27 @@ body {
 	/*-webkit-filter: custom(none url('chrome-extension://__MSG_@@extension_id__/retro.fs'), 32 25 border-box detached, transform perspective(1000), amount 400, resX 1300, resY 100) !important;*/
 }
 
-* { /* * */
+* { 
+	background-image: none !important;
 	background: black !important;
-	color: green !important;
+	color: #00ff00 !important;
 	font-family: 'VT323', monospace !important;
-	border-color: green !important;
+	border-color: #00ff00 !important;
 }
 
-img {
-	-webkit-filter: grayscale(1) contrast(10) !important;
-	/*border: 5px solid green !important;
-	-webkit-filter: custom(url('chrome-extension://__MSG_@@extension_id__/grayscale.fs'), amount 1);*/
+::-webkit-input-placeholder {
+	color: green;
+}
+
+:before,:after {
+	background-image: none !important;
+}
+
+html,img,input[type=image] { /*html,div,a,input */
+	-webkit-filter: custom(
+		none
+		mix(url('chrome-extension://__MSG_@@extension_id__/retro.fs') normal source-atop),
+		1 1) !important;
 }
 
 object {
@@ -53,17 +63,15 @@ object {
 	bottom: 0;
 	background: url('chrome-extension://__MSG_@@extension_id__/overlay.png') repeat !important;
 	pointer-events:none;
+	-webkit-filter: none !important;
+	-webkit-animation: myfirst 0.3s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	z-index: 123456789;
 }
 
-.chrome-retro-img-container {
-	position: relative;
-}
-
-.chrome-retro-img-overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: rgba(0, 255, 0, 0.5) !important;
+@-webkit-keyframes myfirst
+{
+	from { top: -6px; }
+	to { top: 0px; }
 }
