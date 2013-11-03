@@ -68,3 +68,13 @@ object {
 	background-color: #00ff00 !important;
 	width: 12px;
 }
+
+#chrome-retro-game-link {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	height: 64px;
+	width: 64px;
+	background: url('chrome-extension://__MSG_@@extension_id__/images/ohmy.jpg') !important;
+	z-index: 9123456789;
+}
