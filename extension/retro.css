@@ -1,31 +1,8 @@
 @font-face {
-  font-family: 'Press Start 2P';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Press Start 2P'), local('PressStart2P-Regular'), url(http://themes.googleusercontent.com/static/fonts/pressstart2p/v1/8Lg6LX8-ntOHUQnvQ0E7o3dD2UuwsmbX3BOp4SL_VwM.woff) format('woff');
-}
-
-@font-face {
   font-family: 'VT323';
   font-style: normal;
   font-weight: 400;
   src: local('VT323'), local('VT323-Regular'), url(http://themes.googleusercontent.com/static/fonts/vt323/v4/LfMzj2MWAZU6qzlnp1MNbg.woff) format('woff');
-}
-
-body {
-	/*-webkit-filter: custom(url('chrome-extension://__MSG_@@extension_id__/retro.vs')
-				mix(url('chrome-extension://__MSG_@@extension_id__/retro.fs') normal source-atop),  
-				40 40, 
-				transform perspective(1000),
-				amplitude 30, 
-				amount 0.5)
-		!important;*/
-	/*-webkit-filter: custom(url('chrome-extension://__MSG_@@extension_id__/retro.vs') mix(url('chrome-extension://__MSG_@@extension_id__/retro.fs') multiply source-atop), 32 25 border-box detached, transform perspective(1000), amount 0.5, randomness 3, flipAxis 1 -0.58 0, tileOutline 1);*/
-	/*-webkit-filter: custom(url('chrome-extension://__MSG_@@extension_id__/retro.vs') mix(url('chrome-extension://__MSG_@@extension_id__/retro.fs') multiply source-atop), 32 25 border-box detached, transform perspective(1000) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg), amount 0.15, randomness 3, flipAxis 1 -0.58 0, tileOutline 0) !important;*/
-	
-	
-	/*-webkit-filter: custom(none url('chrome-extension://__MSG_@@extension_id__/retro.fs'), 32 25 border-box detached, transform perspective(1000), amount 0.15, tileOutline 1);*/
-	/*-webkit-filter: custom(none url('chrome-extension://__MSG_@@extension_id__/retro.fs'), 32 25 border-box detached, transform perspective(1000), amount 400, resX 1300, resY 100) !important;*/
 }
 
 * { 
@@ -34,6 +11,11 @@ body {
 	color: #00ff00 !important;
 	font-family: 'VT323', monospace !important;
 	border-color: #00ff00 !important;
+	cursor: url('chrome-extension://__MSG_@@extension_id__/cursor.png') !important;
+}
+
+*:hover {
+	cursor: url('chrome-extension://__MSG_@@extension_id__/cursor.png') !important;
 }
 
 ::-webkit-input-placeholder {
@@ -52,7 +34,7 @@ html,img,input[type=image] { /*html,div,a,input */
 }
 
 object {
-	display: none;
+	display: none !important;
 }
 
 #chrome-retro-overlay {
@@ -74,4 +56,15 @@ object {
 {
 	from { top: -6px; }
 	to { top: 0px; }
+}
+
+*::-webkit-scrollbar {
+	background-color: black;
+	border: 1px solid #00ff00;
+    width: 12px;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #00ff00 !important;
+	width: 12px;
 }

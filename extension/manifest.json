@@ -9,5 +9,5 @@
 		"matches": [ "http://*/*", "https://*/*"],
         "all_frames": true
 	}],
-	"web_accessible_resources": ["overlay.png", "grayscale.fs", "simple.vs", "simple.fs", "retro.vs", "retro.fs", "ohmy.jpg"]
+	"web_accessible_resources": ["overlay.png", "retro.vs", "retro.fs", "ohmy.jpg", "cursor.png"]
 }
