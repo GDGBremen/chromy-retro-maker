@@ -78,3 +78,9 @@ object {
 	background: url('chrome-extension://__MSG_@@extension_id__/images/ohmy.jpg') !important;
 	z-index: 9123456789;
 }
+
+#donkeyCanvas {
+	top: 0;
+	position: fixed;
+	z-index: 9123456788;
+}

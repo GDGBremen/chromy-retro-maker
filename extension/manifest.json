@@ -7,7 +7,7 @@
 	
 	"content_scripts": [ {
 		"css": ["stylesheets/retro.css"],
-		"js": ["scripts/jquery.js", "scripts/main.js"],
+		"js": ["scripts/jquery-2.0.3.min.js", "scripts/jcanvas.min.js", "scripts/donkey.js", "scripts/main.js"],
 		"matches": [ "http://*/*", "https://*/*"],
         "all_frames": true
 	}],

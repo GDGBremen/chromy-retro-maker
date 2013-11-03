@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <!-- TODO script für donkey -->
+        <title>Donkey-Beispiel</title>
+		<link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+		<p>START</p>
+        <canvas id="donkeyCanvas" width="600" height="375">
+
+		</canvas>
+		<p>END</p>
+    </body>
+	<script type="text/javascript" src="scripts/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="scripts/jcanvas.min.js"></script>
+	<script type="text/javascript" src="scripts/donkey.js"></script>
+	<script type="text/javascript">
+		window.onload=function(){
+			document.onkeypress = handleKeyboardEvent;
+			redraw(0);
+		};
+	</script>
+</html>
