@@ -134,6 +134,31 @@ function createBackground(){
 		fontFamily: "'Press Start 2P', cursive",
 		text: "Driver"
 	});
+	
+	// helptext
+	$("#donkeyCanvas").drawText({
+		fillStyle: lightgray,
+		x: 475, y: 285,
+		fontSize: 12,
+		fontFamily: "'Press Start 2P', cursive",
+		text: "Press Space\nBar to switch\nlanes"
+	});
+	
+	var secondText;
+	
+	if(gameStarted){
+		secondText = "Press ENTER\nto STOP the game";
+	}else{
+		secondText = "Press ENTER\nto START the game";
+	}
+	
+	$("#donkeyCanvas").drawText({
+		fillStyle: lightgray,
+		x: 475, y: 335,
+		fontSize: 12,
+		fontFamily: "'Press Start 2P', cursive",
+		text: secondText
+	});
 }
 
 function redraw(status){

@@ -5,11 +5,15 @@ $("body").append("<div id=\"chrome-retro-game-link\" alt=\"Game\">"); // TODO:.o
 
 $("#chrome-retro-game-link").click(function(){
 	if(gameOpened){
+		console.log("again click");
 		gameStarted=false;
-		$("body").remove("#donkeyCanvas");
+		$("#donkeyCanvas").remove();
+		gameOpened = false;
 	}else{
+		console.log("click to open");
 		$("body").append("<canvas id=\"donkeyCanvas\" width=\"600\" height=\"375\"></canvas>");
 		document.onkeypress = handleKeyboardEvent;
 		redraw(0);
+		gameOpened = true;
 	}
 });
